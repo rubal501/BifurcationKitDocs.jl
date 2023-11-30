@@ -38,7 +38,7 @@ z0 = [0.238616, 0.982747, 0.367876]
 
 # Bifurcation Problem
 prob = BifurcationProblem(TMvf, z0, par_tm, (@lens _.E0);
-	record_from_solution = (x, p) -> (E = x[1], x = x[2], u = x[3]),)
+	recordFromSolution = (x, p) -> (E = x[1], x = x[2], u = x[3]),)
 
 nothing #hide
 ```
